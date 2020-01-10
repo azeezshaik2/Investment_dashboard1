@@ -1,6 +1,15 @@
 .main {
-  .row {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
+    .row {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+.margin-fix {
+    margin-left: 0px !important;
+}
+
+.sidebar-section {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
 }
