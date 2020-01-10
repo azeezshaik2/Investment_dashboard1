@@ -1,0 +1,47 @@
+.cards-and-summary {
+  .row {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+.card-tabs {
+  .plans-tab, .mutual-funds-tab, .etf-tab {
+    .widget-content .widget-content-right .widget-heading {
+      opacity: 0.8;
+      font-weight: bold;
+    }
+    .widget-content .widget-content-right .widget-subheading {
+      opacity: 0.5;
+    }
+    .widget-content-wrapper {
+      width: 100%;
+    }
+    .widget-numbers {
+      font-size: 1.2rem;
+    }
+    .widget-heading {
+      opacity: 0.8;
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+    .card {
+      cursor: pointer;
+    }
+    .card:hover:not(.active) {
+      background-image: linear-gradient(#a3bded , #6991c7);
+    }
+    .nav-link.active, .show > .nav-link {
+      background-image: linear-gradient(#13547a   , #80d0c7);
+      border-bottom: 4px solid #13547a !important;
+    }
+  }
+}
+.summary-tab-content {
+  .plans-table-row, .mf-table-row, .etf-table-row {
+    padding-left: 15px;
+    padding-right: 15px;
+    .chart-card {
+      padding-right: 0;
+    }
+  }
+}
