@@ -1,0 +1,129 @@
+<div class="cards-and-summary">
+    <div class="row plans-table-row">
+        <div class="col-sm-4 d-flex">
+            <div class="card border-success mb-3 h-100">
+                <div class="card-header">
+                    <span>Trending Funds</span>
+                </div>
+                <div class="card-body flex-fill">
+                    <div class="trending-plans">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                1. ABC Blue Chip
+                                <span class="badge badge-primary badge-pill">71% <i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                2. ABC Blue Chip
+                                <span class="badge badge-primary badge-pill">63% <i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                3. ABC Blue Chip
+                                <span class="badge badge-primary badge-pill">57% <i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                4. ABC Blue Chip
+                                <span class="badge badge-primary badge-pill">47% <i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                5. ABC Blue Chip
+                                <span class="badge badge-primary badge-pill">40% <i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8 d-flex">
+            <div class="card border-primary mb-3 h-100">
+                <div class="card-header">
+                    <div>TimeLine</div>
+                    <div>
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" (click)="showUpcommingData()" [class.active]="selectedTab =='upcomming'">Upcoming</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" (click)="previousData()" [class.active]="selectedTab =='previousData'">Last 6 months</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-body flex-fill">
+                    <div class="card-group" *ngIf="upcommingData">
+                        <div class="card data-card">
+                            <div class="card-body">
+                                <span class="header-text">Retairment Plan</span><br>
+                                <span class="info-text">Account</span><span class="info-text">#1234567890123</span><br>
+                                <span class="info-text">Date:</span><span class="info-text">24th Feb 2020</span><br>
+                                <span class="info-text">Amount:</span><span class="info-text">$1000.00</span><br>
+
+
+                                <button type="button" class="btn pay-now">Pay Now</button>
+                            </div>
+                        </div>
+
+                        <div class="card data-card">
+                            <div class="card-body">
+                                <span class="header-text">Retairment Plan</span><br>
+                                <span class="info-text">Account</span><span class="info-text">#1234567890123</span><br>
+                                <span class="info-text">Date:</span><span class="info-text">24th Feb 2020</span><br>
+                                <span class="info-text">Amount:</span><span class="info-text">$1000.00</span><br>
+
+
+                                <button type="button" class="btn pay-now">Pay Now</button>
+                            </div>
+                        </div>
+
+                        <div class="card data-card">
+                            <div class="card-body">
+                                <span class="header-text">Retairment Plan</span><br>
+                                <span class="info-text">Account</span><span class="info-text">#1234567890123</span><br>
+                                <span class="info-text">Date:</span><span class="info-text">24th Feb 2020</span><br>
+                                <span class="info-text">Amount:</span><span class="info-text">$1000.00</span><br>
+
+                                <button type="button" class="btn paid-btn btn-light">Paid</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-group" *ngIf="pastData">
+                        <div class="card data-card">
+                            <div class="card-body">
+                                <span class="header-text">Retairment Plan</span><br>
+                                <span class="info-text">Account</span><span class="info-text">#1234567890123</span><br>
+                                <span class="info-text">Date:</span><span class="info-text">24th Feb 2020</span><br>
+                                <span class="info-text">Amount:</span><span class="info-text">$1000.00</span><br>
+
+
+                                <button type="button" class="btn paid-btn btn-light">Paid</button>
+                            </div>
+                        </div>
+
+                        <div class="card data-card">
+                            <div class="card-body">
+                                <span class="header-text">Retairment Plan</span><br>
+                                <span class="info-text">Account</span><span class="info-text">#1234567890123</span><br>
+                                <span class="info-text">Date:</span><span class="info-text">24th Feb 2020</span><br>
+                                <span class="info-text">Amount:</span><span class="info-text">$1000.00</span><br>
+
+
+                                <button type="button" class="btn paid-btn btn-light">Paid</button>
+                            </div>
+                        </div>
+
+                        <div class="card data-card">
+                            <div class="card-body">
+                                <span class="header-text">Retairment Plan</span><br>
+                                <span class="info-text">Account</span><span class="info-text">#1234567890123</span><br>
+                                <span class="info-text">Date:</span><span class="info-text">24th Feb 2020</span><br>
+                                <span class="info-text">Amount:</span><span class="info-text">$1000.00</span><br>
+
+                                <button type="button" class="btn paid-btn btn-light">Paid</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

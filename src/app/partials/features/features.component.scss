@@ -1,0 +1,76 @@
+.cards-and-summary {
+    .row {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+.card {
+    width: inherit;
+}
+
+.padding-fix {
+    padding-left: 16px;
+    margin-bottom: 8rem;
+}
+
+.header-content {
+    display: flex;
+}
+
+.dropdown-section {
+    padding-left: 40px;
+}
+
+.pay-now {
+    border: 1px solid #96151d;
+    border-radius: 30px;
+    background-color: #ffffff;
+    width: 70%;
+    color: #96151d;
+    height: 30px;
+    padding-top: 2px;
+    margin-top: 7px;
+    margin-bottom: 12px;
+    font-size: initial;
+}
+
+.data-card {
+    margin-right: 11px;
+    border-radius: 3px;
+    border-width: thin;
+}
+
+.he-1 {
+    max-height: 20px;
+}
+
+.paid-btn {
+    border: 1px solid grey;
+    border-radius: 30px;
+    width: 70%;
+    height: 30px;
+    padding-top: 2px;
+    margin-top: 7px;
+    margin-bottom: 12px;
+    font-size: initial;
+}
+
+.info-text {
+    font-size: smaller;
+    font-family: inherit;
+}
+
+.header-content {
+    font-size: medium;
+    font-weight: inherit;
+}
+
+.list-group-item {
+    border-width: 0px;
+    padding-bottom: 0px;
+}
+
+.list-group {
+    margin: 0 30px 0 -20px;
+}

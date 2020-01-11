@@ -18,6 +18,7 @@ import { SidebarComponent } from './partials/sidebar/sidebar.component';
 
 // chart.js
 import { ChartsModule } from 'ng2-charts';
+import { FeaturesComponent } from './partials/features/features.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ChartsModule } from 'ng2-charts';
     SearchBoxComponent,
     UserBoxComponent,
     SidebarComponent,
-    SummaryCardsNavComponent
+    SummaryCardsNavComponent,
+    FeaturesComponent
   ],
   imports: [
     BrowserModule,
