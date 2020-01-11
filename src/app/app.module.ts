@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -35,6 +36,7 @@ import { FeaturesComponent } from './partials/features/features.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FontAwesomeModule,
     NgbModule,
     ChartsModule

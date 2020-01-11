@@ -1,0 +1,27 @@
+{
+    "trendingFunds": [{
+            "fundName": "ABC Blue Chip",
+            "growth": 76
+        },
+        {
+            "fundName": "ABC Blue Chip",
+            "growth": 65
+        },
+        {
+            "fundName": "ABC Blue Chip",
+            "growth": 62
+        },
+        {
+            "fundName": "ABC Blue Chip",
+            "growth": 53
+        },
+        {
+            "fundName": "ABC Blue Chip",
+            "growth": 51
+        },
+        {
+            "fundName": "ABC Blue Chip",
+            "growth": 48
+        }
+    ]
+}
