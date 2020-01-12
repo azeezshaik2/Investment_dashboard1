@@ -39,9 +39,27 @@
 .summary-tab-content {
   .plans-table-row, .mf-table-row, .etf-table-row {
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 5px;
     .chart-card {
       padding-right: 0;
+      .widget-chart-content-lg {
+        padding-top: 12px;
+        padding-bottom: 35px;
+        .widget-numbers {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .main-card .table-responsive{
+      overflow-x: hidden;
+    }
+    .main-card .table-responsive:hover {
+      overflow-x: auto;
+    }
+  }
+  .plans-table-row {
+    .table-responsive {
+      // overflow-x: hidden;
     }
   }
 }
