@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Color, MultiDataSet, Label} from 'ng2-charts/ng2-charts';
+import {Color, Label} from 'ng2-charts/ng2-charts';
 
 @Component({
   selector: 'app-summary-cards-nav',
@@ -9,27 +9,37 @@ import {Color, MultiDataSet, Label} from 'ng2-charts/ng2-charts';
 export class SummaryCardsNavComponent implements OnInit {
 
   selectedCard: string;
+
+  /*chart datasets*/
   plansBarChartDatasets: any[];
   mutualFundsLineChartDatasets: any[];
-  datasets2: any[];
-  datasets3: any[];
-  labels: Label[];
+  etfLineChartDatasets: any[];
+
+  /*chart colors*/
   lineChartColors: Color[];
-  lineChartColors2: Color[];
-  lineChartColors3: Color[];
   plansBarChartColors: Color[];
   mutualFundsLineChartColors: Color[];
-  options;
+  etfLineChartColors: Color[];
+
+
+  /*chart labels*/
   plansBarChartLabels: Label[];
   mutualFundsLineChartLabels: Label[];
+  etfLineChartLabels: Label[];
+
+  /*chart options*/
   plansBarChartOptions;
   mutualFundsLineChartOptions;
+  etfLineChartOptions;
+  options;
+
   constructor() { }
 
   ngOnInit() {
-    this.selectedCard = 'plans';
+    this.selectedCard = 'mutual-funds';
     this.plansBarChartData();
     this.mutualFundsLineChartData();
+    this.etfLineChartData();
   }
 
   plansBarChartData() {
@@ -69,16 +79,6 @@ export class SummaryCardsNavComponent implements OnInit {
       maintainAspectRatio: false
     };
 
-  this.datasets3 = [
-      {
-        label: 'My First dataset',
-        data: [65, 59, 80, 81, 55, 38, 59, 80, 46],
-        datalabels: {
-          display: false,
-        },
-
-      }
-    ];
   this.lineChartColors = [
       { // dark grey
         backgroundColor: 'rgba(247, 185, 36, 0.2)',
@@ -118,31 +118,6 @@ export class SummaryCardsNavComponent implements OnInit {
     }
     ];
 
-
-
-  this.lineChartColors3 = [
-      { // dark grey
-        backgroundColor: 'rgba(86, 196, 121, 0.2)',
-        borderColor: '#56c479',
-        borderCapStyle: 'round',
-        borderDash: [],
-        borderWidth: 4,
-        borderDashOffset: 0.0,
-        borderJoinStyle: 'round',
-        pointBorderColor: '#56c479',
-        pointBackgroundColor: '#fff',
-        pointHoverBorderWidth: 4,
-        pointRadius: 6,
-        pointBorderWidth: 5,
-        pointHoverRadius: 8,
-        pointHitRadius: 10,
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: '#56c479',
-      },
-    ];
-
-  this.labels = ['401(k) Plan 1', 'Pre 2005 Deferred Compensation Plan',
-    'Post 2005 Deferred compensation plan', '2011 Deferred Compensation Plan'];
 
   this.plansBarChartDatasets = [
       {
@@ -244,7 +219,7 @@ export class SummaryCardsNavComponent implements OnInit {
   mutualFundsLineChartData() {
 
     this.mutualFundsLineChartLabels = ['ABC 500 Idx;Adm', 'ABC 100 Equity Fund',
-      'SPDR S&P 500 ETF', 'SFD L&T Idx;Ret+', 'ABC TSM Idx;Inst+', 'ABC Wellington Fund'];
+      'Fid Magellan Fund', 'SFD L&T Idx;Ret+', 'ABC TSM Idx;Inst+', 'ABC Wellington Fund'];
 
     this.mutualFundsLineChartDatasets = [
     {
@@ -338,6 +313,104 @@ export class SummaryCardsNavComponent implements OnInit {
       maintainAspectRatio: true
     };
 
+  }
+
+  etfLineChartData() {
+    this.etfLineChartLabels = ['ABC QQQ Series 1', 'iShares MSCI Markets ETF',
+      'SPDR S&P 500 ETF', 'SPDR Gold Shares', 'ABC Core S&P 500'];
+
+    this.etfLineChartDatasets = [
+      {
+        label: 'Invested Amount',
+        data: [4956.18, 4289.15, 8569.89, 10900.80, 5106.44],
+        datalabels: {
+          display: false,
+        },
+
+      },
+      {
+        label: 'Current Amount',
+        data: [6174.5, 5749.12, 11264.40, 9646.20, 6829.2],
+        datalabels: {
+          display: false,
+        },
+
+      }
+    ];
+    this.etfLineChartColors = [
+      { // dark grey
+        backgroundColor: 'rgba(48, 177, 255, 0.2)',
+        borderColor: '#30b1ff',
+        borderCapStyle: 'round',
+        borderDash: [],
+        borderWidth: 4,
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'round',
+        pointBorderColor: '#30b1ff',
+        pointBackgroundColor: '#ffffff',
+        pointHoverBorderWidth: 4,
+        pointRadius: 6,
+        pointBorderWidth: 5,
+        pointHoverRadius: 8,
+        pointHitRadius: 10,
+        pointHoverBackgroundColor: '#ffffff',
+        pointHoverBorderColor: '#30b1ff',
+      },
+      { // dark grey
+        backgroundColor: 'rgba(86, 196, 121, 0.2)',
+        borderColor: '#56c479',
+        borderCapStyle: 'round',
+        borderDash: [],
+        borderWidth: 4,
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'round',
+        pointBorderColor: '#56c479',
+        pointBackgroundColor: '#fff',
+        pointHoverBorderWidth: 4,
+        pointRadius: 6,
+        pointBorderWidth: 5,
+        pointHoverRadius: 8,
+        pointHitRadius: 10,
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: '#56c479',
+      }
+    ];
+
+    this.etfLineChartOptions = {
+      layout: {
+        padding: {
+          left: 0,
+          right: 8,
+          top: 0,
+          bottom: 0
+        }
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+            display: false,
+            beginAtZero: false,
+            min: 1000
+          },
+          gridLines: {
+            display: false
+          }
+        }],
+        xAxes: [{
+          ticks: {
+            display: false
+          },
+          gridLines: {
+            display: false
+          }
+        }]
+      },
+      legend: {
+        display: false
+      },
+      responsive: true,
+      maintainAspectRatio: true
+    };
   }
 
 }
