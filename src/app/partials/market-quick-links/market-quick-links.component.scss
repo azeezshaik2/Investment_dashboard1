@@ -1,60 +1,87 @@
 .market-quick-links {
-  margin-left: 20px;
-  margin-right: 20px;
-
-  .stock-ticker-price {
-    font-family: 'Muli', sans-serif;
-    font-weight: 600;
-    font-size: 13px;
-    opacity: 0.8;
-
-    a {color: black}
-    .nav-value {
-      margin-left: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+    .stock-ticker-price {
+        font-family: 'Muli', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        opacity: 0.8;
+        padding: 0px;
+        a {
+            color: black
+        }
+        .nav-value {
+            margin-left: 5px;
+        }
+        .separator {
+            margin-left: 4px;
+            margin-right: 4px;
+        }
     }
-    .separator {
-      margin-left: 4px;
-      margin-right: 4px;
+    .stock-ticker-up {
+        color: #27ae60;
     }
-  }
-  .stock-ticker-up {
-    color: #27ae60;
-  }
-  .stock-ticker-down {
-    color: #f64747;
-  }
-
-  .ticker-up, .ticker-down {
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    padding-left: 8px;
-    margin-right: 8px;
-  }
-
-  .second-row {
-    border-top: 1px solid rgba(0, 0, 0, 0.125);
-  }
-
-  .quick-links-column {
-    .exh-funds-card {
-      :hover {
-        background-color: #1FA2FF;
-        color: white;
-      }
+    .stock-ticker-down {
+        color: #f64747;
     }
-    .card {
-      cursor: pointer;
-      .card-body {
-        padding: 0.7rem;
-      }
-      i {
-        margin-right: 10px;
-        font-size: 1.8rem;
-      }
-      .quick-link-text {
-        font-size: 1.2rem;
-      }
+    .ticker-up,
+    .ticker-down {
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        padding-left: 8px;
+        margin-right: 8px;
     }
-  }
+    .second-row {
+        border-top: 1px solid rgba(0, 0, 0, 0.125);
+    }
+    .quick-links-column {
+        padding-left: 8%;
+        .exh-funds-card {
+             :hover {
+                background-color: #1FA2FF;
+                color: white;
+            }
+        }
+        .card {
+            cursor: pointer;
+            .card-body {
+                padding: 0.7rem;
+            }
+            i {
+                margin-right: 10px;
+                font-size: 1.8rem;
+            }
+            .quick-link-text {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.btn-sm {
+    color: #96151d;
+    background-color: #ffffff;
+    border: 1px solid #96151d;
+    border-radius: 30px;
+    height: 12px;
+    width: 91px;
+    font-size: 12px;
+    padding-bottom: 23px;
+}
+
+.quick-links-row {
+    padding-bottom: 10px;
+}
+
+.col-6 {
+    max-width: 40%;
+}
+
+.no-gutters {
+    margin-top: 6px;
+}
+
+.stock-section {
+    width: 109%;
 }
