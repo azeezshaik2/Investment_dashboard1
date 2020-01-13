@@ -1,4 +1,5 @@
 .cards-and-summary {
+    // margin-bottom: 20px;
     .row {
         margin-left: 5px;
         margin-right: 5px;
@@ -7,15 +8,25 @@
 
 .card {
     width: inherit;
-    height: 100%;
 }
 
-.set-box {
-    max-height: 60%;
-}
-
-.border-primary {
-    max-height: 60%;
+table {
+    margin-bottom: 0px;
+    th {
+        padding-left: 4%;
+        width: 122px;
+        border-top-width: 0px;
+        font-weight: 500;
+        font-size: 14px;
+        border-bottom: 1px;
+    }
+    td {
+        width: 30%;
+        font-weight: 200;
+        font-size: 14px;
+        padding: 9px;
+        border-width: 1px;
+    }
 }
 
 .padding-fix {
@@ -42,6 +53,28 @@
     margin-top: 7px;
     margin-bottom: 12px;
     font-size: initial;
+}
+
+.btn-sm {
+    color: #96151d;
+    background-color: #ffffff;
+    border: 1px solid #96151d;
+    border-radius: 30px;
+    height: 12px;
+    width: 91px;
+    font-size: 12px;
+    padding-bottom: 23px;
+}
+
+.card-body {
+    padding: 0px;
+}
+
+.header-part {
+    background-color: white;
+    border-width: 0px;
+    padding-bottom: 10px;
+    display: inline-flex;
 }
 
 .data-card {
@@ -190,8 +223,25 @@
     height: 86%;
 }
 
-.btn-on {
-    border: 1px solid;
+.card-group {
+    height: 120%;
+}
+
+.inner-card-body {
+    height: 80%;
+}
+
+.card-8 {
+    height: 86%;
+}
+
+.active {
+    background-color: #96151d;
+    color: #ffffff;
+}
+
+.nav-buttton {
+    border-radius: 25px;
 }
 
 .btn-default.btn-on.active {
@@ -214,19 +264,27 @@
     font-weight: bolder;
 }
 
-.active {
-    background-color: #96151d;
-    color: #ffffff;
-}
-
-.btn-group {
-    padding-left: 26%;
-}
-
 li {
     border-radius: 35px;
 }
 
-.nav-buttton {
-    border-radius: 25px;
+.btn-on {
+    border: 1px solid;
+}
+
+.btn-group {
+    padding-left: 44px;
+}
+
+.highlited-funds-header {
+    padding-bottom: 10px;
+}
+
+.header-section {
+    padding-bottom: 13px;
+}
+
+.wishlist-text {
+    height: 28%;
+    padding-top: 22px;
 }

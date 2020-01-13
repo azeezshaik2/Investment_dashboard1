@@ -10,24 +10,32 @@ export class FeaturesComponent implements OnInit {
 
   upcommingData = true;
   pastData = false;
+  customData = false;
   selectedTab: string;
-  trendingData: any;
+  newsFeedData: any;
   timelineData: any;
 
   constructor(private rest: RestService) { }
 
   ngOnInit() {
     this.selectedTab = 'upcomming';
-    this.getTrendingFundData();
+    this.getNewsFeedData();
     this.getTimeLineData();
   }
 
-  getTrendingFundData() {
-    this.rest.getRestData('trendingfunds').subscribe(data => this.trendingData = data.trendingFunds);
+  getNewsFeedData() {
+    this.rest.getRestData('newsFeedData').subscribe(data => this.newsFeedData = data.newReleases);
   }
 
   getTimeLineData() {
     this.rest.getRestData('timelineData').subscribe(data => this.timelineData = data);
+  }
+
+  showCustomData() {
+    this.selectedTab = 'customData';
+    this.pastData = false;
+    this.upcommingData = true;
+
   }
 
   showUpcommingData() {

@@ -1,35 +1,18 @@
 <div class="cards-and-summary">
     <div class="row plans-table-row">
-        <div class="col-sm-4 d-flex">
-            <div class="card border-success mb-3 h-100">
-                <div class="card-header">
-                    <span>Trending Funds</span>
-                </div>
-                <div class="card-body flex-fill">
-                    <div class="trending-plans">
-                        <ul class="list-group">
-                            <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let trendDataItem of trendingData; index as i">
-                                {{ i+1 }}. {{ trendDataItem.fundName }}
-                                <span class="badge badge-primary badge-pill">{{ trendDataItem.growth }}% <i class="fa fa-arrow-up" aria-hidden="true"></i></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div class="col-sm-8 d-flex">
-            <div class="card border-primary mb-3 h-100">
-                <div class="card-header">
-                    <div>TimeLine</div>
+            <div class="card border-primary mb-3 example-1 scrollbar-deep-purple bordered-deep-purple thin">
+                <div class="card-header header-part">
                     <div>
-                        <ul class="nav nav-tabs card-header-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link active" (click)="showUpcommingData()" [class.active]="selectedTab =='upcomming'">Upcoming</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" (click)="previousData()" [class.active]="selectedTab =='previousData'">Last 6 months</a>
-                            </li>
-                        </ul>
+                        <div class="header-section">
+                            <div class="navbar-brand">Timeline</div>
+                            <div class="btn-group">
+                                <button class="btn active nav-buttton btn-on" (click)="showUpcommingData()" [class.active]="selectedTab =='upcomming'">Upcoming</button>
+                                <button class="btn nav-buttton active btn-on" (click)="previousData()" [class.active]="selectedTab =='previousData'">Last Quater</button>
+                                <button class="btn nav-buttton active btn-on" (click)="showCustomData()" [class.active]="selectedTab =='customData'">Custom</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card-body flex-fill" *ngIf="timelineData">
@@ -40,9 +23,6 @@
                                 <span class="info-text">Account</span><span class="info-text">{{featureDataItem.AccountNumber}}</span><br>
                                 <span class="info-text">Date:</span><span class="info-text">{{featureDataItem.Date}}</span><br>
                                 <span class="info-text">Amount:</span><span class="info-text">{{featureDataItem.Amount}}</span><br>
-
-                                <button type="button" class="btn pay-now" *ngIf="!featureDataItem.paid">Pay Now</button>
-                                <button type="button" class="btn paid-btn btn-light" *ngIf="featureDataItem.paid">Paid</button>
                             </div>
                         </div>
                     </div>
@@ -54,11 +34,36 @@
                                 <span class="info-text">Account</span><span class="info-text">{{pastDataItem.AccountNumber}}</span><br>
                                 <span class="info-text">Date:</span><span class="info-text">{{pastDataItem.Date}}</span><br>
                                 <span class="info-text">Amount:</span><span class="info-text">{{pastDataItem.Amount}}</span><br>
-
-                                <button type="button" class="btn pay-now" *ngIf="!pastDataItem.paid">Pay Now</button>
-                                <button type="button" class="btn paid-btn btn-light" *ngIf="pastDataItem.paid">Paid</button>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="card-group" *ngIf="customData">
+                        <div class="card data-card" *ngFor="let featureDataItem of timelineData.featureData">
+                            <div class="card-body">
+                                <span class="header-text">{{featureDataItem.planName}}</span><br>
+                                <span class="info-text">Account</span><span class="info-text">{{featureDataItem.AccountNumber}}</span><br>
+                                <span class="info-text">Date:</span><span class="info-text">{{featureDataItem.Date}}</span><br>
+                                <span class="info-text">Amount:</span><span class="info-text">{{featureDataItem.Amount}}</span><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 d-flex">
+            <div class="card border-success mb-3 set-box">
+                <div class="card-header">
+                    <span>News feed</span>
+                </div>
+                <div class="card-body flex-fill example-1 scrollbar-deep-purple bordered-deep-purple thin">
+                    <div class="trending-plans">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let newsFeedItem of newsFeedData; index as i">
+                                {{ newsFeedItem.planName }} rolling on {{ newsFeedItem.date}}
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
