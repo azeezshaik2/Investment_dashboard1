@@ -1,0 +1,60 @@
+.market-quick-links {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  .stock-ticker-price {
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    opacity: 0.8;
+
+    a {color: black}
+    .nav-value {
+      margin-left: 12px;
+    }
+    .separator {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+  }
+  .stock-ticker-up {
+    color: #27ae60;
+  }
+  .stock-ticker-down {
+    color: #f64747;
+  }
+
+  .ticker-up, .ticker-down {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    padding-left: 8px;
+    margin-right: 8px;
+  }
+
+  .second-row {
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+  }
+
+  .quick-links-column {
+    .exh-funds-card {
+      :hover {
+        background-color: #1FA2FF;
+        color: white;
+      }
+    }
+    .card {
+      cursor: pointer;
+      .card-body {
+        padding: 0.7rem;
+      }
+      i {
+        margin-right: 10px;
+        font-size: 1.8rem;
+      }
+      .quick-link-text {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

@@ -20,6 +20,7 @@ import { SidebarComponent } from './partials/sidebar/sidebar.component';
 // chart.js
 import { ChartsModule } from 'ng2-charts';
 import { FeaturesComponent } from './partials/features/features.component';
+import { MarketQuickLinksComponent } from './partials/market-quick-links/market-quick-links.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { FeaturesComponent } from './partials/features/features.component';
     UserBoxComponent,
     SidebarComponent,
     SummaryCardsNavComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    MarketQuickLinksComponent
   ],
   imports: [
     BrowserModule,
