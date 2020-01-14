@@ -52,7 +52,46 @@ export class SummaryCardsNavComponent implements OnInit {
     this.allFundsDoughnutData();
   }
 
+  addMonths(date, months) {
+    date.setMonth(date.getMonth() + months);
+    return date;
+  }
+
+  setMonthsLabelsForBarChart() {
+    const newDataArray = [];
+
+    const month = new Array();
+    month[0] = 'January';
+    month[1] = 'February';
+    month[2] = 'March';
+    month[3] = 'April';
+    month[4] = 'May';
+    month[5] = 'June';
+    month[6] = 'July';
+    month[7] = 'August';
+    month[8] = 'September';
+    month[9] = 'October';
+    month[10] = 'November';
+    month[11] = 'December';
+
+    newDataArray[0] = month[this.addMonths(new Date(), -5).getMonth()] + ' - ' +
+      this.addMonths(new Date(), -5).getFullYear();
+    newDataArray[1] = month[this.addMonths(new Date(), -4).getMonth()] + ' - ' +
+      this.addMonths(new Date(), -4).getFullYear();
+    newDataArray[2] = month[this.addMonths(new Date(), -3).getMonth()] + ' - ' +
+      this.addMonths(new Date(), -3).getFullYear();
+    newDataArray[3] = month[this.addMonths(new Date(), -2).getMonth()] + ' - ' +
+      this.addMonths(new Date(), -2).getFullYear();
+    newDataArray[4] = month[this.addMonths(new Date(), -1).getMonth()] + ' - ' +
+      this.addMonths(new Date(), -1).getFullYear();
+    newDataArray[5] = month[this.addMonths(new Date(), 0).getMonth()] + ' - ' +
+      this.addMonths(new Date(), 0).getFullYear();
+
+    return newDataArray;
+  }
+
   allFundsDistributionData() {
+
     this.allFundsChartDatassets = [
       {
         label: 'Current Amount in Mutual Funds',
@@ -62,7 +101,7 @@ export class SummaryCardsNavComponent implements OnInit {
         },
       },
       {
-        label: 'Current Amount Exchange-Traded Funds',
+        label: 'Current Amount in Exchange-Traded Funds',
         data: [42568.45, 65478.12, 35604.78, 44589.42, 53123.92, 39663.42],
         datalabels: {
           display: false,
@@ -79,8 +118,7 @@ export class SummaryCardsNavComponent implements OnInit {
       }
     ];
 
-    this.allFundsChartLabels = ['t-6', 't-5',
-      't-4', 't-3', 't-2', 't-1'];
+    this.allFundsChartLabels = this.setMonthsLabelsForBarChart();
     this.allFundsChartColors = [
       { // dark grey
         backgroundColor: 'rgba(48, 177, 255, 0.2)',
@@ -164,8 +202,7 @@ export class SummaryCardsNavComponent implements OnInit {
           gridLines: {
             display: false
           },
-          barPercentage: 0.8,
-          categoryPercentage: 0.8
+          barPercentage: 0.8
         }]
       },
       legend: {
