@@ -1,2 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "assets/base";
+.vl {
+    border-left: 4px solid blue;
+    height: 33px;
+    position: inherit;
+    // left: 50%;
+    margin-left: -20px;
+    top: 4px;
+}

@@ -5,7 +5,7 @@
             <div class="card border-primary example-1 scrollbar-deep-purple bordered-deep-purple thin">
                 <div class="card-header header-part">
                     <div>
-                        <div class="header-section">
+                        <div class="header-section vl">
                             <div class="navbar-brand">Timeline</div>
                             <div class="btn-group">
                                 <button class="btn active nav-buttton btn-on" (click)="showUpcommingData()" [class.active]="selectedTab =='upcomming'">Upcoming</button>
@@ -54,8 +54,12 @@
 
         <div class="col-sm-4 d-flex">
             <div class="card border-success set-box">
-                <div class="card-header">
-                    <span>News feed</span>
+                <div class="card-header header-part">
+                    <div>
+                        <div class="header-section vl">
+                            <div class="navbar-brand">News feed</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-body flex-fill example-1 scrollbar-deep-purple bordered-deep-purple thin">
                     <div class="trending-plans">

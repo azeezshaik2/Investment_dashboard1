@@ -4,15 +4,12 @@
         margin-right: 5px;
     }
     height: 15%;
+    padding-bottom: 75px;
 }
 
 .card {
     width: inherit;
     max-height: fit-content;
-}
-
-.set-box {
-    max-height: 52%;
 }
 
 .border-primary {
@@ -233,4 +230,28 @@ li {
 
 .col-sm-8 {
     height: fit-content;
+}
+
+ul {
+    height: -webkit-fill-available;
+}
+
+// .vl {
+//     border-left: 4px solid blue;
+//     height: 33px;
+//     position: inherit;
+//     // left: 50%;
+//     margin-left: -20px;
+//     top: 4px;
+// }
+.navbar-brand {
+    margin-left: 10px;
+}
+
+.header-section {
+    margin-bottom: 22px;
+}
+
+.set-vl {
+    margin-left: 0px !important;
 }
