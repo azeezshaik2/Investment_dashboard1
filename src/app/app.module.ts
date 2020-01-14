@@ -22,6 +22,8 @@ import { ChartsModule } from 'ng2-charts';
 import { FeaturesComponent } from './partials/features/features.component';
 import { MarketQuickLinksComponent } from './partials/market-quick-links/market-quick-links.component';
 import { SuggetionsComponent } from './partials/suggetions/suggetions.component';
+import { ArticlesComponent } from './partials/articles/articles.component';
+import { FooterComponent } from './partials/footer/footer.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { SuggetionsComponent } from './partials/suggetions/suggetions.component'
     SummaryCardsNavComponent,
     FeaturesComponent,
     MarketQuickLinksComponent,
-    SuggetionsComponent
+    SuggetionsComponent,
+    ArticlesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

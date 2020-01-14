@@ -1,0 +1,63 @@
+.ml-1 {
+    margin-left: 1.25rem !important;
+    margin-right: 1.25rem !important;
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.cards-and-summary {
+    .row {
+        margin-left: 5px;
+        margin-right: 28px;
+        margin-top: 19px;
+    }
+}
+
+.article-text {
+    color: #96151d;
+    padding-left: 25px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.card-1 {
+    background-image: url("https://placeimg.com/640/200/tech/1");
+    height: 9rem;
+    border-radius: 12px;
+}
+
+.card-2 {
+    background-image: url("https://placeimg.com/640/200/tech/2");
+    height: 9rem;
+    border-radius: 12px;
+    background-color: lightblue;
+}
+
+.card-3 {
+    background-image: url("https://placeimg.com/640/200/tech/3");
+    height: 9rem;
+    border-radius: 12px;
+}
+
+.card-4 {
+    background-image: url("https://placeimg.com/640/200/tech/4");
+    height: 9rem;
+    border-radius: 12px;
+}
+
+.head-text {
+    padding-left: 18px;
+    padding-top: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.foot-text {
+    padding-left: 18px;
+    padding-top: 12px;
+    color: white;
+    font-size: 16px;
+}
