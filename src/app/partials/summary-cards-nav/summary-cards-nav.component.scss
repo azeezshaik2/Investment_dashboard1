@@ -3,9 +3,15 @@
     margin-left: 5px;
     margin-right: 5px;
   }
+  .main-heading {
+    color: #96151d;
+    margin-left: 20px;
+    font-size: 1.8rem
+  ;
+  }
 }
 .card-tabs {
-  .plans-tab, .mutual-funds-tab, .etf-tab {
+  .plans-tab, .mutual-funds-tab, .etf-tab, .all-investments-tab {
     .widget-content .widget-content-right .widget-heading {
       opacity: 0.8;
       font-weight: bold;
@@ -29,6 +35,8 @@
     }
     .card:hover:not(.active) {
       background-image: linear-gradient(#a3bded , #6991c7);
+      /*transition: all 0.4s ease-in-out;
+      transform: scale(1.1);*/
     }
     .nav-link.active, .show > .nav-link {
       background-image: linear-gradient(#13547a   , #80d0c7);
@@ -37,7 +45,7 @@
   }
 }
 .summary-tab-content {
-  .plans-table-row, .mf-table-row, .etf-table-row {
+  .plans-table-row, .mf-table-row, .etf-table-row, .all-table-row{
     padding-left: 15px;
     padding-right: 5px;
     .chart-card {
@@ -62,4 +70,48 @@
       // overflow-x: hidden;
     }
   }
+  .all-table-row {
+    .all-bar-charts-div .widget-chart-content-lg {
+      padding-bottom: 0 !important;
+      padding-left: 5px;
+    }
+    .all-returns-stack {
+      margin-top: 1rem;
+      .widget-content {
+        padding: 0.5rem 1.5rem;
+        .widget-progress-wrapper {
+          margin-top: 0;
+        }
+        .progress-sub-label {
+          padding-top: 0;
+        }
+        .mutual-funds-gain-bar {
+          background-color: #30b1ff;
+        }
+        .etf-gain-bar {
+          background-color: #f7b924;
+        }
+        .plans-gain-bar {
+          background-color: #56c479;
+        }
+        .mf-gain-amount-color {
+          color: #30b1ff;
+        }
+        .etf-gain-amount-color {
+          color: #f7b924;
+        }
+        .plans-gain-amount-color {
+          color: #56c479;
+        }
+
+      }
+    }
+  }
 }
+.br-1 {
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+}
+.bt-1 {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+

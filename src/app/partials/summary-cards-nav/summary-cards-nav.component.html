@@ -1,7 +1,29 @@
 <div class="cards-and-summary">
+  <div class="row">
+    <div class="text-left main-heading mb-2">My Portfolio</div>
+  </div>
   <div class="card-tabs mb-3">
-    <div class="row mt-4 nav nav-pills" role="tablist">
-      <div  class="mutual-funds-tab col-md-4">
+    <div class="row nav nav-pills" role="tablist">
+      <div  class="all-investments-tab col-md-3">
+        <div  class="card  widget-content nav-item nav-link" (click)="selectedCard = 'all-investments'" [class.active]="selectedCard==='all-investments'">
+          <div class="mb-3 widget-content-wrapper row no-gutters">
+            <div class="widget-heading">All Investments</div>
+          </div>
+          <div class="mb-3 widget-content-wrapper row no-gutters">
+            <div  class="widget-content-left">
+              <div  class="widget-heading widget-numbers">${{392041.80 | number: '1.2-2'}}</div>
+              <div  class="widget-subheading">Total Invested Amount</div>
+            </div>
+          </div>
+          <div class="widget-content-wrapper row no-gutters">
+            <div  class="widget-content-left">
+              <div  class="widget-heading widget-numbers">${{504678.80 | number: '1.2-2'}}</div>
+              <div  class="widget-subheading">Total Current Amount</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="mutual-funds-tab col-md-3">
         <div  class="card  widget-content nav-item nav-link" (click)="selectedCard = 'mutual-funds'" [class.active]="selectedCard==='mutual-funds'">
           <div class="mb-3 widget-content-wrapper row no-gutters">
             <div class="widget-heading">Mutual Funds</div>
@@ -9,26 +31,26 @@
           <div class="mb-3 widget-content-wrapper row no-gutters">
             <div  class="widget-content-left col-md-6">
               <div  class="widget-heading widget-numbers">6</div>
-              <div  class="widget-subheading">Total Mutual Funds</div>
+              <div  class="widget-subheading">Total</div>
             </div>
-            <div  class="widget-content-right col-md-6 pl-3">
-              <div  class="widget-heading widget-numbers">0.65%</div>
-              <div  class="widget-subheading">Expense Ratio</div>
+            <div  class="widget-content-right col-md-6">
+              <div  class="widget-heading widget-numbers">${{121651.59 | number: '1.2-2'}}</div>
+              <div  class="widget-subheading">Invested Amount</div>
             </div>
           </div>
           <div class="widget-content-wrapper row no-gutters">
             <div  class="widget-content-left col-md-6">
-              <div  class="widget-heading widget-numbers">${{121651.59 | number: '1.2-2'}}</div>
-              <div  class="widget-subheading">Invested Amount</div>
+              <div  class="widget-heading widget-numbers">0.65%</div>
+              <div  class="widget-subheading">Expense Ratio</div>
             </div>
-            <div  class="widget-content-right col-md-6 pl-3">
+            <div  class="widget-content-right col-md-6">
               <div  class="widget-heading widget-numbers">${{159914.79 | number: '1.2-2'}}</div>
               <div  class="widget-subheading">Current Amount</div>
             </div>
           </div>
         </div>
       </div>
-      <div  class="etf-tab col-md-4">
+      <div  class="etf-tab col-md-3">
         <div  class="card  widget-content nav-item nav-link" (click)="selectedCard = 'etf'" [class.active]="selectedCard==='etf'">
           <div class="mb-3 widget-content-wrapper row no-gutters">
             <div class="widget-heading">ETF</div>
@@ -36,26 +58,26 @@
           <div class="mb-3 widget-content-wrapper row no-gutters">
             <div  class="widget-content-left col-md-6">
               <div  class="widget-heading widget-numbers">5</div>
-              <div  class="widget-subheading">Total ETF</div>
+              <div  class="widget-subheading">Total</div>
             </div>
-            <div  class="widget-content-right col-md-6 pl-3">
-              <div  class="widget-heading widget-numbers">0.44%</div>
-              <div  class="widget-subheading">Expense Ratio</div>
+            <div  class="widget-content-right col-md-6">
+              <div  class="widget-heading widget-numbers">${{33822.46 | number: '1.2-2'}}</div>
+              <div  class="widget-subheading">Invested Amount</div>
             </div>
           </div>
           <div class="widget-content-wrapper row no-gutters">
             <div  class="widget-content-left col-md-6">
-              <div  class="widget-heading widget-numbers">${{33822.46 | number: '1.2-2'}}</div>
-              <div  class="widget-subheading">Invested Amount</div>
+              <div  class="widget-heading widget-numbers">0.44%</div>
+              <div  class="widget-subheading">Expense Ratio</div>
             </div>
-            <div  class="widget-content-right col-md-6 pl-3">
+            <div  class="widget-content-right col-md-6">
               <div  class="widget-heading widget-numbers">${{39663.42 | number: '1.2-2'}}</div>
               <div  class="widget-subheading">Current Amount</div>
             </div>
           </div>
         </div>
       </div>
-      <div  class="plans-tab col-md-4">
+      <div  class="plans-tab col-md-3">
         <div  class="card  widget-content nav-item nav-link" (click)="selectedCard = 'plans'" [class.active]="selectedCard==='plans'">
           <div class="mb-3 widget-content-wrapper row no-gutters">
             <div class="widget-heading">Plans</div>
@@ -63,19 +85,19 @@
           <div class="mb-3 widget-content-wrapper row no-gutters">
             <div  class="widget-content-left col-md-6">
               <div  class="widget-heading widget-numbers">4</div>
-              <div  class="widget-subheading">Total Plans</div>
+              <div  class="widget-subheading">Total</div>
             </div>
-            <div  class="widget-content-right col-md-6 pl-3">
-              <div  class="widget-heading widget-numbers">1.00%</div>
-              <div  class="widget-subheading">ROI</div>
+            <div  class="widget-content-right col-md-6">
+              <div  class="widget-heading widget-numbers">${{236567.75 | number: '1.2-2'}}</div>
+              <div  class="widget-subheading">Invested Amount</div>
             </div>
           </div>
           <div class="widget-content-wrapper row no-gutters">
             <div  class="widget-content-left col-md-6">
-              <div  class="widget-heading widget-numbers">${{236567.75 | number: '1.2-2'}}</div>
-              <div  class="widget-subheading">Invested Amount</div>
+              <div  class="widget-heading widget-numbers">1.00%</div>
+              <div  class="widget-subheading">ROI</div>
             </div>
-            <div  class="widget-content-right col-md-6 pl-3">
+            <div  class="widget-content-right col-md-6">
               <div  class="widget-heading widget-numbers">${{305100.59 | number: '1.2-2'}}</div>
               <div  class="widget-subheading">Current Amount</div>
             </div>
@@ -84,7 +106,161 @@
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="text-left main-heading mb-2">
+      <span *ngIf="selectedCard === 'all-investments'">All Investments Details</span>
+      <span *ngIf="selectedCard === 'mutual-funds'">Mutual Funds Details</span>
+      <span *ngIf="selectedCard === 'etf'">Exchange-Traded Funds Details</span>
+      <span *ngIf="selectedCard === 'plans'">Plans Details</span>
+    </div>
+  </div>
   <div class="summary-tab-content mb-3">
+    <div *ngIf="selectedCard === 'all-investments'" class="row all-table-row">
+      <div class=" col-md-12 pl-0 chart-card">
+        <div class="card">
+          <div class="p-0 card-body">
+            <div class="p-1 slick-slider-sm mx-auto">
+              <div class="widget-chart widget-chart2 text-left p-0">
+                <div class="widget-chat-wrapper-oute row no-gutters">
+                  <div class="col-md-8 all-bar-charts-div">
+                    <div class="widget-chart-content widget-chart-content-lg">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <div class="widget-chart-flex">
+                            <div class="widget-title opacity-5 text-muted text-uppercase">Total Invested Amount</div>
+                          </div>
+                          <div class="widget-numbers">
+                            <div class="widget-chart-flex">
+                              <div>
+                                <span class="" style="color: #30b1ff">${{392041.80 | number: '1.2-2'}}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="widget-chart-flex">
+                            <div class="widget-title opacity-5 text-muted text-uppercase">Total Current Amount</div>
+                          </div>
+                          <div class="widget-numbers">
+                            <div class="widget-chart-flex">
+                              <div>
+                                <span class="" style="color: #56c479">${{504678.80 | number: '1.2-2'}}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="d-inline-block float-right pr-3" ngbDropdown>
+                            <button type="button" ngbDropdownToggle class="mb-2 mr-2 btn btn-outline-primary">Last 6 Months</button>
+                            <div ngbDropdownMenu>
+                              <button class="dropdown-item">Last 3 Months</button>
+                              <button class="dropdown-item">Last 6 Months</button>
+                              <button class="dropdown-item">Last 12 Months</button>
+                              <button class="dropdown-item">Last 24 Months</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" he-auto opacity-10 m-0">
+                      <div class="d-block">
+                        <canvas baseChart
+                                class="chart"
+                                style="width: 80%;height: 70%"
+                                [datasets]="allFundsChartDatassets"
+                                [labels]="allFundsChartLabels"
+                                [colors]="allFundsChartColors"
+                                [options]="allFundsChartOptions"
+                                [chartType]="'bar'"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="main-card all-returns-stack card">
+                      <div class="ml-3 mb-1 mr-1">
+                        <div class="widget-content">
+                          <div class="widget-content-outer">
+                            <div class="widget-content-wrapper">
+                              <div class="widget-content-left">
+                                <div class="widget-heading">Mutual Funds</div>
+                                <div class="widget-subheading">Gained Amount</div>
+                              </div>
+                              <div class="widget-content-right">
+                                <div class="widget-numbers mf-gain-amount-color">${{38263 | number: '1.2-2'}}</div>
+                              </div>
+                            </div>
+                            <div class="widget-progress-wrapper">
+                              <div class="progress-bar-xs progress">
+                                <div class="mutual-funds-gain-bar progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 31.45%;"></div>
+                              </div>
+                              <div class="progress-sub-label">
+                                <div class="sub-label-left">Absolute Return %</div>
+                                <div class="sub-label-right">31.45%</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ml-3 mb-1 mt-2 mr-1 bt-1">
+                        <div class="widget-content">
+                          <div class="widget-content-outer">
+                            <div class="widget-content-wrapper">
+                              <div class="widget-content-left">
+                                <div class="widget-heading">Exchange-Traded Funds</div>
+                                <div class="widget-subheading">Gained Amount</div>
+                              </div>
+                              <div class="widget-content-right">
+                                <div class="widget-numbers etf-gain-amount-color">${{5840.96 | number: '1.2-2'}}</div>
+                              </div>
+                            </div>
+                            <div class="widget-progress-wrapper">
+                              <div class="progress-bar-xs progress">
+                                <div class="progress-bar etf-gain-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 17.26%;"></div>
+                              </div>
+                              <div class="progress-sub-label">
+                                <div class="sub-label-left">Absolute Return %</div>
+                                <div class="sub-label-right">17.26%</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ml-3 mb-1 mt-2 mr-1 bt-1">
+                        <div class="widget-content">
+                          <div class="widget-content-outer">
+                            <div class="widget-content-wrapper">
+                              <div class="widget-content-left">
+                                <div class="widget-heading">Plans</div>
+                                <div class="widget-subheading">Gained Amount</div>
+                              </div>
+                              <div class="widget-content-right">
+                                <div class="widget-numbers plans-gain-amount-color">${{68532.84 | number: '1.2-2'}}</div>
+                              </div>
+                            </div>
+                            <div class="widget-progress-wrapper">
+                              <div class="progress-bar-xs progress">
+                                <div class="progress-bar plans-gain-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 28.96%;"></div>
+                              </div>
+                              <div class="progress-sub-label">
+                                <div class="sub-label-left">Absolute Return %</div>
+                                <div class="sub-label-right">28.96%</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div *ngIf="selectedCard === 'mutual-funds'" class="row mf-table-row">
       <div class="col-md-7 main-card card">
         <div class="card-header">
@@ -313,36 +489,6 @@
                 </div>
               </div>
             </div>
-            <!--<ul class="list-group list-group-flush">
-              <li class="p-3 bg-transparent list-group-item">
-                <div class="widget-content p-0">
-                  <div class="widget-content-outer">
-                    <div class="widget-content-wrapper">
-                      <div class="widget-content-left">
-                        <div class="widget-heading">Total Orders</div>
-                        <div class="widget-subheading">Last year expenses</div>
-                      </div>
-                      <div class="widget-content-right">
-                        <div class="widget-numbers text-success">
-                          <small>$</small>
-                          1896
-                        </div>
-                      </div>
-                    </div>
-                    <div class="widget-progress-wrapper">
-                      <div class="progress-bar-sm progress-bar-animated-alt progress">
-                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="43" aria-valuemin="0"
-                             aria-valuemax="100" style="width: 43%;"></div>
-                      </div>
-                      <div class="progress-sub-label">
-                        <div class="sub-label-left">YoY Growth</div>
-                        <div class="sub-label-right">100%</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>-->
           </div>
         </div>
       </div>

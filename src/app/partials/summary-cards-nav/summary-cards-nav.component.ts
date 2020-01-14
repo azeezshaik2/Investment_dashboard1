@@ -14,32 +14,258 @@ export class SummaryCardsNavComponent implements OnInit {
   plansBarChartDatasets: any[];
   mutualFundsLineChartDatasets: any[];
   etfLineChartDatasets: any[];
+  allFundsChartDatassets: any[];
+  allFundsDoughnutChartDatasets: any[];
 
   /*chart colors*/
   lineChartColors: Color[];
   plansBarChartColors: Color[];
   mutualFundsLineChartColors: Color[];
   etfLineChartColors: Color[];
+  allFundsChartColors: Color[];
+  allFundsDoughnutChartColors: Color[];
 
 
   /*chart labels*/
   plansBarChartLabels: Label[];
   mutualFundsLineChartLabels: Label[];
   etfLineChartLabels: Label[];
+  allFundsChartLabels: Label[];
+  allFundsDoughnutChartlabels: Label[];
 
   /*chart options*/
   plansBarChartOptions;
   mutualFundsLineChartOptions;
   etfLineChartOptions;
+  allFundsChartOptions;
+  allFundsDoughnutChartOptions;
   options;
 
   constructor() { }
 
   ngOnInit() {
-    this.selectedCard = 'mutual-funds';
+    this.selectedCard = 'all-investments';
+    this.allFundsDistributionData();
     this.plansBarChartData();
     this.mutualFundsLineChartData();
     this.etfLineChartData();
+    this.allFundsDoughnutData();
+  }
+
+  allFundsDistributionData() {
+    this.allFundsChartDatassets = [
+      {
+        label: 'Current Amount in Mutual Funds',
+        data: [110366.89, 95461.56, 150201.11, 140125.19, 102745.89, 159914.79],
+        datalabels: {
+          display: false,
+        },
+      },
+      {
+        label: 'Current Amount Exchange-Traded Funds',
+        data: [42568.45, 65478.12, 35604.78, 44589.42, 53123.92, 39663.42],
+        datalabels: {
+          display: false,
+        },
+
+      },
+      {
+        label: 'Current Amount in Plans',
+        data: [198567.12, 225634.12, 216983.58, 234578.23, 274584.47, 305100.59],
+        datalabels: {
+          display: false,
+        },
+
+      }
+    ];
+
+    this.allFundsChartLabels = ['t-6', 't-5',
+      't-4', 't-3', 't-2', 't-1'];
+    this.allFundsChartColors = [
+      { // dark grey
+        backgroundColor: 'rgba(48, 177, 255, 0.2)',
+        borderColor: '#30b1ff',
+        borderCapStyle: 'round',
+        borderDash: [],
+        borderWidth: 4,
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'round',
+        pointBorderColor: '#30b1ff',
+        pointBackgroundColor: '#ffffff',
+        pointHoverBorderWidth: 4,
+        pointRadius: 6,
+        pointBorderWidth: 5,
+        pointHoverRadius: 8,
+        pointHitRadius: 10,
+        pointHoverBackgroundColor: '#ffffff',
+        pointHoverBorderColor: '#30b1ff',
+      },
+      { // dark grey
+        backgroundColor: 'rgba(247, 185, 36, 0.2)',
+        borderColor: '#f7b924',
+        borderCapStyle: 'round',
+        borderDash: [],
+        borderWidth: 4,
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'round',
+        pointBorderColor: '#f7b924',
+        pointBackgroundColor: '#fff',
+        pointHoverBorderWidth: 4,
+        pointRadius: 6,
+        pointBorderWidth: 5,
+        pointHoverRadius: 8,
+        pointHitRadius: 10,
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: '#f7b924',
+      },
+      { // dark grey
+        backgroundColor: 'rgba(86, 196, 121, 0.2)',
+        borderColor: '#56c479',
+        borderCapStyle: 'round',
+        borderDash: [],
+        borderWidth: 4,
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'round',
+        pointBorderColor: '#56c479',
+        pointBackgroundColor: '#fff',
+        pointHoverBorderWidth: 4,
+        pointRadius: 6,
+        pointBorderWidth: 5,
+        pointHoverRadius: 8,
+        pointHitRadius: 10,
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: '#56c479',
+      }
+    ];
+
+    this.allFundsChartOptions = {
+      layout: {
+        padding: {
+          left: 0,
+          right: 16,
+          top: 0,
+          bottom: 0
+        }
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+            display: false,
+            beginAtZero: true
+          },
+          gridLines: {
+            display: false
+          }
+        }],
+        xAxes: [{
+          ticks: {
+            display: false
+          },
+          gridLines: {
+            display: false
+          },
+          barPercentage: 0.8,
+          categoryPercentage: 0.8
+        }]
+      },
+      legend: {
+        display: false
+      },
+      responsive: true,
+      maintainAspectRatio: false
+    };
+  }
+
+  allFundsDoughnutData() {
+    this.allFundsDoughnutChartDatasets = [
+      {
+        label: 'Beginnning Balance',
+        data: [100234.65, 53687.90, 62345.00],
+        datalabels: {
+          display: false,
+        },
+
+      }
+    ];
+
+    this.allFundsDoughnutChartlabels = ['401(k) Plan 1', 'Deferred Compensation Plan',
+      'Deferred compensation plan 2'];
+    this.allFundsDoughnutChartColors = [
+      { // dark grey
+        backgroundColor: 'rgba(48, 177, 255, 0.2)',
+        borderColor: '#30b1ff',
+        borderCapStyle: 'round',
+        borderDash: [],
+        borderWidth: 4,
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'round',
+        pointBorderColor: '#30b1ff',
+        pointBackgroundColor: '#ffffff',
+        pointHoverBorderWidth: 4,
+        pointRadius: 6,
+        pointBorderWidth: 5,
+        pointHoverRadius: 8,
+        pointHitRadius: 10,
+        pointHoverBackgroundColor: '#ffffff',
+        pointHoverBorderColor: '#30b1ff',
+      },
+      { // dark grey
+        backgroundColor: 'rgba(86, 196, 121, 0.2)',
+        borderColor: '#56c479',
+        borderCapStyle: 'round',
+        borderDash: [],
+        borderWidth: 4,
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'round',
+        pointBorderColor: '#56c479',
+        pointBackgroundColor: '#fff',
+        pointHoverBorderWidth: 4,
+        pointRadius: 6,
+        pointBorderWidth: 5,
+        pointHoverRadius: 8,
+        pointHitRadius: 10,
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: '#56c479',
+      }
+    ];
+
+    this.allFundsDoughnutChartOptions = {
+      layout: {
+        padding: {
+          left: 0,
+          right: 8,
+          top: 0,
+          bottom: 0
+        }
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+            display: false,
+            beginAtZero: true
+          },
+          gridLines: {
+            display: false
+          }
+        }],
+        xAxes: [{
+          ticks: {
+            display: false
+          },
+          gridLines: {
+            display: false
+          },
+          barPercentage: 0.4
+        }]
+      },
+      legend: {
+        display: true,
+        position: 'right'
+      },
+      cutoutPercentage: 70,
+      responsive: true,
+      maintainAspectRatio: false
+    };
   }
 
   plansBarChartData() {
