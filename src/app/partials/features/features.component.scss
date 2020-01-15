@@ -255,3 +255,17 @@ ul {
 .set-vl {
     margin-left: 0px !important;
 }
+
+.news-feed-card {
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-bottom: 20px;
+  .trending-plans {
+    li {
+      padding-top: 8px;
+      a {
+        color: #96151d;
+      }
+    }
+  }
+}

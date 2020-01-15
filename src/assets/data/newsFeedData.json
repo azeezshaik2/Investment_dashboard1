@@ -1,48 +1,20 @@
 {
     "newReleases": [{
-            "planName": "New Fund",
-            "date": "20th Feb 2020"
+            "newsLink": "Expense ratio cuts on 56 ABC company funds mean more savings for you",
+            "date": "26th Dec 2019"
         },
         {
-            "planName": "New Fund",
-            "date": "20th Feb 2020"
+            "newsLink": "Updated distribution estimates for ABC company managed payout fund",
+            "date": "17th Dec 2019"
         },
-        {
-            "planName": "New Fund",
-            "date": "20th Feb 2020"
-        },
-        {
-            "planName": "New Fund",
-            "date": "20th Feb 2020"
-        },
-        {
-            "planName": "New Fund",
-            "date": "20th Feb 2020"
-        },
-        {
-            "planName": "New Fund",
-            "date": "20th Feb 2020"
-        },
-        {
-            "planName": "New Fund",
-            "date": "20th Feb 2020"
-        },
-        {
-            "planName": "New Fund",
-            "date": "20th Feb 2020"
-        },
-        {
-            "planName": "New Fund",
-            "date": "20th Feb 2020"
-        },
-        {
-            "planName": "New Fund",
-            "date": "20th Feb 2020"
-        },
-        {
-            "planName": "New Fund",
-            "date": "20th Feb 2020"
-        }
+      {
+        "newsLink": "New year new funds, find more on decreased expense ratio funds here",
+        "date": "2nd Jan 2020"
+      },
+      {
+        "newsLink": "Updated capital gain estimates and more",
+        "date": "20th Dec 2019"
+      }
     ]
 
 }
