@@ -102,7 +102,7 @@ export class SummaryCardsNavComponent implements OnInit {
       },
       {
         label: 'Current Amount in Exchange-Traded Funds',
-        data: [42568.45, 65478.12, 35604.78, 44589.42, 53123.92, 39663.42],
+        data: [33568.45, 38478.12, 35604.78, 44589.42, 53123.92, 39663.42],
         datalabels: {
           display: false,
         },
@@ -110,7 +110,7 @@ export class SummaryCardsNavComponent implements OnInit {
       },
       {
         label: 'Current Amount in Plans',
-        data: [198567.12, 225634.12, 216983.58, 234578.23, 274584.47, 305100.59],
+        data: [218567.12, 225634.12, 254983.58, 234578.23, 274584.47, 305100.59],
         datalabels: {
           display: false,
         },

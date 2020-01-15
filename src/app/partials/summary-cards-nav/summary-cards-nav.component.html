@@ -186,17 +186,17 @@
                                 <div class="widget-subheading">Gained Amount</div>
                               </div>
                               <div class="widget-content-right">
-                                <div class="widget-numbers mf-gain-amount-color">${{38263 | number: '1.2-2'}}</div>
+                                <div class="widget-numbers mf-gain-amount-color">${{49547.9 | number: '1.2-2'}}</div>
                               </div>
                             </div>
                             <div class="widget-progress-wrapper">
                               <div class="progress-bar-xs progress">
                                 <div class="mutual-funds-gain-bar progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                     style="width: 31.45%;"></div>
+                                     style="width: 44.89%;"></div>
                               </div>
                               <div class="progress-sub-label">
                                 <div class="sub-label-left">Absolute Return %</div>
-                                <div class="sub-label-right">31.45%</div>
+                                <div class="sub-label-right">44.89%</div>
                               </div>
                             </div>
                           </div>
@@ -211,17 +211,17 @@
                                 <div class="widget-subheading">Gained Amount</div>
                               </div>
                               <div class="widget-content-right">
-                                <div class="widget-numbers etf-gain-amount-color">${{5840.96 | number: '1.2-2'}}</div>
+                                <div class="widget-numbers etf-gain-amount-color">${{6094.97 | number: '1.2-2'}}</div>
                               </div>
                             </div>
                             <div class="widget-progress-wrapper">
                               <div class="progress-bar-xs progress">
                                 <div class="progress-bar etf-gain-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                     style="width: 17.26%;"></div>
+                                     style="width: 18.15%;"></div>
                               </div>
                               <div class="progress-sub-label">
                                 <div class="sub-label-left">Absolute Return %</div>
-                                <div class="sub-label-right">17.26%</div>
+                                <div class="sub-label-right">18.15%</div>
                               </div>
                             </div>
                           </div>
@@ -236,17 +236,17 @@
                                 <div class="widget-subheading">Gained Amount</div>
                               </div>
                               <div class="widget-content-right">
-                                <div class="widget-numbers plans-gain-amount-color">${{68532.84 | number: '1.2-2'}}</div>
+                                <div class="widget-numbers plans-gain-amount-color">${{86533.47 | number: '1.2-2'}}</div>
                               </div>
                             </div>
                             <div class="widget-progress-wrapper">
                               <div class="progress-bar-xs progress">
                                 <div class="progress-bar plans-gain-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                     style="width: 28.96%;"></div>
+                                     style="width: 39.59%;"></div>
                               </div>
                               <div class="progress-sub-label">
                                 <div class="sub-label-left">Absolute Return %</div>
-                                <div class="sub-label-right">28.96%</div>
+                                <div class="sub-label-right">39.59%</div>
                               </div>
                             </div>
                           </div>
@@ -264,7 +264,7 @@
     <div *ngIf="selectedCard === 'mutual-funds'" class="row mf-table-row">
         <div class="col-md-7 main-card card">
           <div class="card-header">
-            <div class="card-header-title font-size-lg text-capitalize font-weight-normal">Funds Summary</div>
+            <div class="card-header-title font-size-lg text-capitalize font-weight-normal pb-2">Funds Summary</div>
           </div>
           <div class="table-responsive">
             <table class="align-middle text-truncate mb-0 table table-borderless table-hover">
@@ -439,8 +439,19 @@
           <div class="card">
             <div class="card-header-tab card-header">
               <div class="card-header-title font-size-lg text-capitalize font-weight-normal">
-                <i class="header-icon lnr-cloud-download icon-gradient bg-happy-itmeo"> </i>
-                All Funds Performance
+                <i class="header-icon fa fa-area-chart"> </i>
+                Funds Performance
+                <div class="d-inline-block float-right pr-3" ngbDropdown>
+                  <button type="button" ngbDropdownToggle class="mb-2 mr-2 btn btn-outline-primary">All Funds</button>
+                  <div ngbDropdownMenu>
+                    <button class="dropdown-item">ABC 500 Idx;Adm</button>
+                    <button class="dropdown-item">ABC 100 Equity Fund</button>
+                    <button class="dropdown-item">Fid Magellan Fund</button>
+                    <button class="dropdown-item">ABC TSM Idx;Inst+</button>
+                    <button class="dropdown-item">SFD L&T Idx;Ret+</button>
+                    <button class="dropdown-item">ABC Wellington 2030 Fund</button>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="p-0 card-body">
@@ -647,8 +658,18 @@
         <div class="card">
           <div class="card-header-tab card-header">
             <div class="card-header-title font-size-lg text-capitalize font-weight-normal">
-              <i class="header-icon lnr-cloud-download icon-gradient bg-happy-itmeo"> </i>
-              ETF Mix
+              <i class="header-icon fa fa-area-chart"> </i>
+              ETF Performance
+              <div class="d-inline-block float-right pr-3" ngbDropdown>
+                <button type="button" ngbDropdownToggle class="mb-2 mr-2 btn btn-outline-primary">All ETFs</button>
+                <div ngbDropdownMenu>
+                  <button class="dropdown-item">ABC QQQ Series 1</button>
+                  <button class="dropdown-item">iShares MSCI Markets ETF</button>
+                  <button class="dropdown-item">SPDR S&P 500 ETF</button>
+                  <button class="dropdown-item">SPDR Gold Shares</button>
+                  <button class="dropdown-item">ABC Core S&P 500</button>
+                </div>
+              </div>
             </div>
           </div>
           <div class="p-0 card-body">
@@ -821,8 +842,17 @@
         <div class="card">
           <div class="card-header-tab card-header">
             <div class="card-header-title font-size-lg text-capitalize font-weight-normal">
-              <i class="header-icon lnr-cloud-download icon-gradient bg-happy-itmeo"> </i>
+              <i class="header-icon fa fa-bar-chart"> </i>
               Plan Mix
+              <div class="d-inline-block float-right pr-3" ngbDropdown>
+                <button type="button" ngbDropdownToggle class="mb-2 mr-2 btn btn-outline-primary">All Plans</button>
+                <div ngbDropdownMenu>
+                  <button class="dropdown-item">401(k) Plan 1</button>
+                  <button class="dropdown-item">Deferred Compensation Plan</button>
+                  <button class="dropdown-item">Deferred Compensation Plan 2</button>
+                  <button class="dropdown-item">Deferred Compensation Plan 3</button>
+                </div>
+              </div>
             </div>
           </div>
           <div class="p-0 card-body">

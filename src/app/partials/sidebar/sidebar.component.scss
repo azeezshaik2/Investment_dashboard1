@@ -7,7 +7,7 @@
 .sidebar-item {
     text-align: center;
     width: 126px;
-    height: 100px;
+    height: 120px;
 }
 
 .sidebar-item:hover {
@@ -15,7 +15,16 @@
 }
 
 .item-text {
-    padding-top: 40px;
-    text-align: center;
-    margin-bottom: 0px !important;
+    padding-top: 8px;
+}
+
+.sidebar-item img {
+  width:25%;
+  filter: invert(100%);
+}
+
+.text-icon-div {
+  display: inline-block;
+  margin-bottom: 16px;
+  margin-top: 20px;
 }
