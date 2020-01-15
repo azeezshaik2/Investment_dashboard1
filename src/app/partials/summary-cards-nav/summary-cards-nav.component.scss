@@ -6,7 +6,7 @@
   .main-heading {
     color: #96151d;
     margin-left: 20px;
-    font-size: 1.8rem
+    font-size: 1.5rem
   ;
   }
 }
@@ -28,7 +28,7 @@
     .widget-heading {
       opacity: 0.8;
       font-weight: bold;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
     .card {
       cursor: pointer;
@@ -41,6 +41,12 @@
     .nav-link.active, .show > .nav-link {
       background-image: linear-gradient(#13547a   , #80d0c7);
       border-bottom: 4px solid #13547a !important;
+    }
+  }
+  .mutual-funds-tab, .etf-tab, .plans-tab {
+    padding-left: 8px;
+    .col-md-7 {
+      text-align: right;
     }
   }
 }
@@ -92,7 +98,6 @@
       padding-left: 5px;
     }
     .all-returns-stack {
-      margin-top: 2rem;
       .widget-content {
         padding: 0.5rem 1.5rem;
         .widget-progress-wrapper {
