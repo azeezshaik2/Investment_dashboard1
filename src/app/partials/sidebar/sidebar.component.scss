@@ -8,9 +8,14 @@
     text-align: center;
     width: 126px;
     height: 120px;
+  cursor: pointer;
+}
+.selected {
+  cursor: unset;
 }
 
-.sidebar-item:hover {
+
+.sidebar-item:hover, .selected {
     background-color: #5c0309;
 }
 
