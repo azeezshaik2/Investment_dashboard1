@@ -10,6 +10,7 @@ export class SuggetionsComponent implements OnInit {
 
 
   trendingData: any;
+  wishlistedData: any
   trendingDataFlag = true;
   recommendedDataFlag = false;
   selectedTab: string;
@@ -22,7 +23,10 @@ export class SuggetionsComponent implements OnInit {
   }
 
   getTrendingFundData() {
-    this.rest.getRestData('trendingfunds').subscribe(data => this.trendingData = data.trendingFunds);
+    this.rest.getRestData('trendingfunds').subscribe(data => {
+      this.trendingData = data.trendingFunds;
+      this.wishlistedData = data.wishlistedFunds;
+    });
   }
 
   showTrendingFunds() {

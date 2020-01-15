@@ -1,27 +1,76 @@
 {
     "trendingFunds": [{
             "fundName": "ABC Blue Chip",
-            "growth": 76
+            "nav": 243.25,
+      "type": "ETF",
+      "bookmarked": true
+        },
+        {
+            "fundName": "ABC Target 2030 Fund",
+            "nav": 124.52,
+          "type": "Mutual Fund",
+          "bookmarked": false
+        },
+        {
+            "fundName": "ABC Mrkt Ins +",
+            "nav": 102.00,
+          "type": "ETF",
+          "bookmarked": false
+        },
+        {
+            "fundName": "ABC Redemption Fund",
+            "nav": 85.60,
+          "type": "Mutual Fund",
+          "bookmarked": false
+        },
+        {
+            "fundName": "ABC Share Bonds NYSL Fund",
+            "nav": 185.65,
+          "type": "ETF",
+          "bookmarked": true
         },
         {
             "fundName": "ABC Blue Chip",
-            "growth": 65
-        },
-        {
-            "fundName": "ABC Blue Chip",
-            "growth": 62
-        },
-        {
-            "fundName": "ABC Blue Chip",
-            "growth": 53
-        },
-        {
-            "fundName": "ABC Blue Chip",
-            "growth": 51
-        },
-        {
-            "fundName": "ABC Blue Chip",
-            "growth": 48
+            "nav": 243.25,
+          "type": "ETF",
+          "bookmarked": true
         }
-    ]
+    ],
+  "wishlistedFunds": [{
+    "fundName": "ABC Share Bonds NYSL Fund",
+    "nav": 185.65,
+    "type": "ETF",
+    "bookmarked": true
+  },
+    {
+      "fundName": "ABC NNN series 1",
+      "nav": 194.52,
+      "type": "ETF",
+      "bookmarked": true
+    },
+    {
+      "fundName": "ABC premium stock Ind+",
+      "nav": 301.25,
+      "type": "ETF",
+      "bookmarked": true
+    },
+    {
+      "fundName": "ABC Capital Markets Pro fund",
+      "nav":112.66,
+      "type": "Mutual Fund",
+      "bookmarked": true
+    },
+    {
+      "fundName": "ABC exchange Margin Ind",
+      "nav": 201.78,
+      "type": "ETF",
+      "bookmarked": true
+    },
+    {
+      "fundName": "ABC Blue Chip",
+      "nav": 243.25,
+      "type": "ETF",
+      "bookmarked": true
+    }
+  ]
 }
