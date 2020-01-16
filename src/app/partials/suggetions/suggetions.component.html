@@ -39,7 +39,7 @@
                       </tr>
                       </thead>
                         <tbody class="text-center">
-                        <tr *ngFor="let fund of trendingData">
+                        <tr *ngFor="let fund of recommendedData">
                           <td>{{fund.fundName}}</td>
                           <td>${{fund.nav | number: '1.2-2'}}</td>
                           <td>{{fund.type}}</td>
