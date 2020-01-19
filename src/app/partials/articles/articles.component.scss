@@ -24,28 +24,40 @@
 }
 
 .card-1 {
-    background-image: url("https://placeimg.com/640/200/tech/1");
+    background-image: url("../../../assets/images/articles/article_1_blur.jpg");
     height: 9rem;
     border-radius: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
 }
 
 .card-2 {
-    background-image: url("https://placeimg.com/640/200/tech/2");
+    background-image: url("../../../assets/images/articles/article_2 _blur.jpg");
     height: 9rem;
     border-radius: 12px;
     background-color: lightblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
 }
 
 .card-3 {
-    background-image: url("https://placeimg.com/640/200/tech/3");
+    background-image: url("../../../assets/images/articles/tips3_blur.jpg");
     height: 9rem;
     border-radius: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
 }
 
 .card-4 {
-    background-image: url("https://placeimg.com/640/200/tech/4");
+    background-image: url("../../../assets/images/articles/tips_4blur.jpg");
     height: 9rem;
     border-radius: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
 }
 
 .head-text {

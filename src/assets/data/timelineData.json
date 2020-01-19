@@ -1,20 +1,20 @@
 {
     "featureData": [{
-            "planName": "Retirment Plan",
+            "planName": "Retirement Plan",
             "AccountNumber": "#876543219876",
             "Date": "20th Feb 2020",
             "Amount": 1000,
             "paid": false
         },
         {
-            "planName": "Retirment Plan",
+            "planName": "Retirement Plan",
             "AccountNumber": "#324651789515",
             "Date": "24th Feb 2020",
             "Amount": 2000,
             "paid": false
         },
         {
-            "planName": "Retirment Plan",
+            "planName": "Retirement Plan",
             "AccountNumber": "#65378193249",
             "Date": "20th Feb 2020",
             "Amount": 500,
@@ -22,21 +22,21 @@
         }
     ],
     "pastData": [{
-            "planName": "Retirment Plan",
+            "planName": "Retirement Plan",
             "AccountNumber": "#876543219876",
             "Date": "20th Feb 2020",
             "Amount": 1000,
             "paid": true
         },
         {
-            "planName": "Retirment Plan",
+            "planName": "Retirement Plan",
             "AccountNumber": "#324651789515",
             "Date": "24th Feb 2020",
             "Amount": 2000,
             "paid": true
         },
         {
-            "planName": "Retirment Plan",
+            "planName": "Retirement Plan",
             "AccountNumber": "#65378193249",
             "Date": "20th Feb 2020",
             "Amount": 500,
